@@ -42,7 +42,7 @@ extension ClimateViewController: UITextFieldDelegate {
     }
     
     //RETURN BUTTOM
-    @nonobjc func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         searchTextField.text = searchTextField.text?.replacingOccurrences(of: " ", with: "+")
         searchTextField.endEditing(true)
             return true
